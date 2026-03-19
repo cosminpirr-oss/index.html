@@ -1,66 +1,41 @@
 <!doctype html>
-<html>
+<html lang="ro">
   <head>
-    <title>Prima mea pagină</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vizualizare Bubble Sort</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Salut lume!</h1>
-    <p>Aceasta este prima mea pagină.</p>
+    <main class="page">
+      <section class="hero">
+        <h1>Bubble Sort Visualizer</h1>
+        <p>
+          Generează un șir de 5 numere și urmărește fiecare pas din algoritmul
+          Bubble Sort.
+        </p>
+      </section>
+
+      <section class="controls">
+        <button id="generate-btn" type="button">Generează array</button>
+        <button id="sort-btn" type="button">Sortează</button>
+      </section>
+
+      <section class="visualizer">
+        <div class="panel">
+          <h2>Array inițial</h2>
+          <div id="starting-array" class="array-row"></div>
+        </div>
+
+        <div class="panel">
+          <h2>Pașii sortării</h2>
+          <div id="array-container" class="steps-container">
+            <div class="placeholder">Apasă pe „Generează array” pentru a începe.</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
-
-<h1>Cosmin pirvu</h1>
-<p>Sunt pasionat de programare și vreau să devin dezvoltator full-stack.</p>
-
-<h2>Hobby-uri</h2>
-<ul>
-  <li>mers cu masina</li>
-  <li>Fotbal</li>
-  <li>invat IT</li>
-</ul>
-
-<h2>Profil meu online</h2>
-<a href="https://github.com/settings/profile">Profilul meu GitHub</a>
-<img src="https://avatars.githubusercontent.com/u/233758761?s=400&u=62b980d04622a6b0c390f9da06e17ec7300be73a&v=4" alt="Poză de profil">
-
-<h2>Pașii mei spre a deveni dezvoltator softwer</h2>
-<ol>
-  <li>Învăț HTML</li>
-  <li>Învăț CSS</li>
-  <li>Învăț JavaScript</li>
- <li>Învăț Pyton</li>
-</ol>
-
-<h2>Skill-uri</h2>
-<table border="1">
-  <tr>
-    <th>Tehnologie</th>
-    <th>Nivel</th>
-  </tr>
-  <tr>
-    <td>HTML</td>
-    <td>Începător</td>
-  </tr>
-  <tr>
-    <td>CSS</td>
-    <td>Începător</td>
-  </tr>
-</table>
-
-<h2>Contact</h2>
-<form>
-  <label for="nume">nume:</label><br>
-  <input type="text" id="nume" name="nume"><br><br>
-
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="email"><br><br>
-
-  <label for="mesaj">Mesaj:</label><br>
-  <textarea id="mesaj" name="mesaj"></textarea><br><br>
-
-  <button type="submit">Trimite</button>
-</form>
-
-<link rel="stylesheet" href="style.css">
-
-

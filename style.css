@@ -1,17 +1,92 @@
-/* Facem fundalul paginii mai plăcut */
 body {
-  background-color: #f5f5f5;
+  margin: 0;
   font-family: Arial, sans-serif;
-  margin: 20px;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1f2937;
 }
 
-/* Titluri mai vizibile */
-h1, h2 {
-  color: #2c3e50;
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
 }
 
-/* Text mai ușor de citit */
-p, li {
-  font-size: 16px;
-  color: #333;
+.hero {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  margin-bottom: 12px;
+  color: #1d4ed8;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: #2563eb;
+  color: white;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.visualizer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.panel {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.array-row,
+.placeholder {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.array-item {
+  min-width: 52px;
+  padding: 12px 0;
+  border-radius: 14px;
+  background: #dbeafe;
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid transparent;
+}
+
+.array-item.active {
+  border-color: #ef4444;
+  background: #fee2e2;
+}
+
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.placeholder {
+  color: #64748b;
 }
